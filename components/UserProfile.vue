@@ -1,96 +1,103 @@
 <script lang="ts" setup></script>
 <template>
-    <div>
-        <div class="bg-white block py-10">
+    <div class="font-serif">
+        <div class="bg-white block py-10 mt-[60px]">
             <div class="max-w-2xl mx-auto">
-            <!--
-                ! ------------------------------------------------------------
-                ! Profile banner and avatar
-                ! ------------------------------------------------------------
-                                    !-->
                 <div class="w-full">
-                    <div class="w-full bg-yellow-200 h-48 rounded-t-lg border-solid border-2 border-slate-200"></div>
-                    <div class="absolute -mt-20 ml-5">
-                        <div
-                            class="bg-gray-200 border border-gray-300 h-32 w-32 rounded-full shadow-md border-b border-primary">
-                            <img class="w-32 h-32 rounded-full mx-auto" src="icon (1).png" alt="John Doe">
+                    <div class="w-full bg-white h-48 rounded-t-lg border-solid border-2 border-slate-200">
+                        
+                            
+                            <div
+                                class="mt-2 flex justify-center rounded-md border-2 border-dashed border-gray-300 px-6 pt-5 pb-[65px]">
+                                <div class="space-y-1 text-center">
+                                    <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                        viewBox="0 0 48 48" aria-hidden="true">
+                                        <path
+                                            d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="flex text-sm text-gray-600">
+                                        <label for="file-upload"
+                                            class="relative cursor-pointer rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500">
+                                            <span>Upload a file</span>
+                                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                                        </label>
+                                        <p class="pl-1">or drag and drop</p>
+                                    </div>
+                                    <p class="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    <div class="absolute -mt-10 ml-72">
+                        <div class="flex items-center h-[50%] w-full">
+                            <span class="inline-block h-20  overflow-hidden rounded-full bg-gray-100">
+                                <svg class="h-full w-full text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                                </svg>
+                            </span>
                         </div>
                     </div>
                 </div>
-
-            <!--
-                    ! ------------------------------------------------------------
-                    ! Profile general information
-                    ! ------------------------------------------------------------
-                                        !-->
                 <div class="bg-primary border border-primary rounded-b-lg p-5 pt-20 flex flex-col">
 
-
-                    <label for="website-admin"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
-                    <div class="flex">
-                        <span
-                            class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-                            @
+                    <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-4 ml-4">
+                        <span clas="text-green-500">
+                            <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
                         </span>
-                        <input type="text" id="website-admin"
-                            class="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="elonmusk">
+                        <span class="tracking-wide">About</span>
                     </div>
-                    <label for="input-group-1"
-                        class="block mt-4 mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                        Email</label>
-                    <div class="relative mb-4">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                            </svg>
+                    <div class="text-gray-700">
+                        <div class="grid md:grid-cols-2 text-sm">
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Username</div>
+                                <div class="px-4 py-2">Jane</div>
+                            </div>
+                        <!-- <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Last Name</div>
+                                <div class="px-4 py-2">Doe</div>
+                                    </div> -->
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Gender</div>
+                                <div class="px-4 py-2">Female</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Contact No.</div>
+                                <div class="px-4 py-2">+11 998001001</div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Current Address</div>
+                                <div class="px-4 py-2">Beech Creek, PA, Pennsylvania</div>
+                            </div>
+                        <!-- <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Permanant Address</div>
+                                <div class="px-4 py-2">Arlington Heights, IL, Illinois</div>
+                                    </div> -->
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Email.</div>
+                                <div class="px-4 py-2">
+                                    <a class="text-blue-800" href="mailto:jane@example.com">jane@example.com</a>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2">
+                                <div class="px-4 py-2 font-semibold">Birthday</div>
+                                <div class="px-4 py-2">Feb 06, 1998</div>
+                            </div>
                         </div>
-                        <input type="text" id="input-group-1"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="name@flowbite.com">
                     </div>
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone
-                        Number</label>
-                    <div class="relative mb-6">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5  text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                    <NuxtLink to="user_register"
+                        class="text-center ml-[150px] block w-[50%] text-yellow-600 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-4 my-4 ">
+
+                        Change Profile
+                    </NuxtLink>
 
 
-                        </div>
-                        <input type="text" id="input-group-1"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="+855">
-                    </div>
-                    <label for="input-group-1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                        Your Bio</label>
-                    <div class="relative mb-6">
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-4  text-gray-500 dark:text-gray-400">
-                                <path
-                                    d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" />
-                            </svg>
-
-                        </div>
-                        <input type="text" id="input-group-1"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Describe Yourself">
-                    </div>
-                    <div class="flex justify-end">
-                        <button type="button"
-                            class="text-black w-[25%]  bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-3 py-3 text-center  dark:focus:ring-yellow-900">Change
-                            Profile</button>
-
-                    </div>
                 </div>
-
-            </div>
+        </div>
     </div>
 </div></template>

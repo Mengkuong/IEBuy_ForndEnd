@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-   <div class="min-h-screen py-[70px] bg-gradient-to-r from-yellow-500 to-yellow-300">
+   <div class="min-h-screen py-[70px] bg-gradient-to-r from-gray-300 to-gray-300">
       <div class="container mx-auto">
         <div class=" w-[40%] bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
          

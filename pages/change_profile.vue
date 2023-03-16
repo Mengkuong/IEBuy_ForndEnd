@@ -2,9 +2,7 @@
 
 <template>
   <div>
-   <NavBar/>
-   <!-- <Chart/> -->
-   <!-- <SideBar/> -->
+    <ChangeProfile/>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="bg-gray-200 overflow-x-hidden font-mono lg:overflow-x-auto lg:overflow-hidden flex items-center justify-center lg:h-screen">
+  <div class="bg-gray-200 overflow-x-hidden font-serif lg:overflow-x-auto lg:overflow-hidden flex items-center justify-center lg:h-screen">
     
   <!-- remove flex classes from body tag to remove the horizontal and vertical position -->
 

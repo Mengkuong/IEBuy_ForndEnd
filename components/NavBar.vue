@@ -1,6 +1,6 @@
-<script lang="ts" setup>
-</script>
+<script>
 
+  </script>
 <template>
    <nav
       class="fixed top-0 z-50 w-full bg-yellow-600 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700  font-serif">
@@ -236,36 +236,6 @@
                </div>
             </div>
          </div>
-
-         <div class="flex items-center justify-center h-[500px] mb-4 rounded bg-gray-50 dark:bg-gray-800">
-            <div class="card mb-6">
-               <header class="card-header">
-                  <p class="card-header-title">
-                     <span class="icon"><i class="mdi mdi-finance"></i></span>
-                     Performance
-                  </p>
-                  <a href="#" class="card-header-icon">
-                     <span class="icon"><i class="mdi mdi-reload"></i></span>
-                  </a>
-               </header>
-               <div class="card-content">
-                  <div class="chart-area">
-                     <div class="h-full">
-                        <div class="chartjs-size-monitor">
-                           <div class="chartjs-size-monitor-expand">
-                              <div></div>
-                           </div>
-                           <div class="chartjs-size-monitor-shrink">
-                              <div></div>
-                           </div>
-                        </div>
-                        <canvas id="big-line-chart" width="2992" height="1000" class="chartjs-render-monitor block"
-                           style="height: 400px; width: 1197px;"></canvas>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
          <div class="grid grid-cols-2 gap-4 mb-4">
             <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
                <p class="text-2xl text-gray-400 dark:text-gray-500">+</p>
@@ -300,5 +270,3 @@
       </div>
    </div>
 </template>
-
-<style scoped></style>

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="bg-gradient-to-r from-yellow-300 to-yellow-400 antialiased flex font-sans text-gray-900 h-[100%]">
+  <div class="bg-gradient-to-r from-gray-300 to-gray-400 antialiased flex font-sans text-gray-900 h-[100%]">
     <form class="rounded-lg mx-auto  w-[60%] my-10 inputs space-y-6 bg-yellow-200 h-[100%] px-[40px] py-[30px] font-serif">
       <div>
         <h1 class="text-4xl font-bold">User Register Account Settings</h1>
