@@ -2,6 +2,7 @@
   <div>
     <!-- <NuxtWelcome /> -->
     <NuxtPage />
+    
   </div>
 </template>
 <script>

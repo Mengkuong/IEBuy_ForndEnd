@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <RegisterAccount/>
+    <SuperAdminRegisterAccount/>
   </div>
 </template>
 

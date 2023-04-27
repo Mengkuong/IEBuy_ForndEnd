@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 <template>
     <div>
-        <NavBar/>
-        <UserProfile />
+        <SuperAdminFinanceData/>
     </div>
 </template>
+<style></style>

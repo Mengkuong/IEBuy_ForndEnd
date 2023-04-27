@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <UserChangeProfile/>
+    <NavBar/>
+   <UserBuyShareList/>
   </div>
 </template>
 

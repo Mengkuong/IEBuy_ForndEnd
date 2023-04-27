@@ -19,7 +19,7 @@
                   </svg>
                </button>
                <a href="https://iebuyexpress.com/" class="flex ml-2 md:mr-24">
-                  <img src="icon (1).png" class="h-12 mr-3 " alt="FlowBite Logo" />
+                  <img src="https://iebuyexpress.com/icon.png" class="h-12 mr-3 " alt="IEBuy Logo" />
                   <span
                      class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">IEBuy</span>
                </a>
@@ -47,15 +47,15 @@
                         </p>
                      </div>
                      <ul class="py-1" role="none">
-                        <NuxtLink to="dashboard">
+                        <!-- <NuxtLink to="dashboard">
                            <div 
                               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                               role="menuitem">Dashboard</div>
                        
-                        </NuxtLink>
+                        </NuxtLink> -->
                           
                         <li>
-                           <a href="change_profile"
+                           <a href="#"
                               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                               role="menuitem">Settings</a>
                         </li>
@@ -83,7 +83,7 @@
       <div class="h-full px-3 pb-4 overflow-y-auto bg-yellow-500 dark:bg-gray-800 font-serif">
          <ul class="space-y-2">
             <li>
-               <a href="/"
+               <a href="dashboard"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg aria-hidden="true"
                      class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -131,11 +131,11 @@
                </button>
                <ul id="dropdown-ecommerce" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="buy_list"
+                     <a href="#"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Buy Market</a>
                   </li>
                   <li>
-                     <a href="sale_history"
+                     <a href="#"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sell List</a>
                   </li>
                   <li>
@@ -144,7 +144,7 @@
                   </li>
                </ul>
             </li>
-            <li>
+            <!-- <li>
                <a href="#"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg aria-hidden="true"
@@ -162,10 +162,10 @@
                      <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
                      <span
                         class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
-                  </NuxtLink>
+                  </NuxtLink> 
 
                </a>
-            </li>
+            </li> -->
             <li>
 <!-- User DropDown -->
                <button type="button"
@@ -187,23 +187,23 @@
                </button>
                <ul id="dropdown-example" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="user_list"
+                     <a href="view_customer"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Users
                         List</a>
                   </li>
                   <li>
-                     <a href="user_profile"
+                     <a href="#"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Profile</a>
                   </li>
                   <li>
-                     <a href="change_profile"
+                     <a href="#"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Setting</a>
                   </li>
                </ul>
             </li>
 
             <li>
-               <a href="admin_login"
+               <a href="#"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg aria-hidden="true"
                      class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -216,7 +216,7 @@
                </a>
             </li>
             <li>
-               <a href="register"
+               <a href="#"
                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                <svg aria-hidden="true"
                   class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"

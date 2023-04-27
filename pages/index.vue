@@ -2,6 +2,7 @@
 
 <template>
   <div>
+    <Dashboard/>
    <NavBar/>
    <!-- <Chart/> -->
    <!-- <SideBar/> -->

@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <UserChangeProfile/>
+   <AdminAddItem/>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <UserChangeProfile/>
+    <AdminUploadCertificate/>
   </div>
 </template>
 

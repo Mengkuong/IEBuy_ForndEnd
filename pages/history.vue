@@ -2,6 +2,7 @@
 <template>
     <div>
         <NavBar/>
-        <UserProfile />
+        <UserHistoryUser/>
     </div>
 </template>
+<style></style>

@@ -1,10 +1,8 @@
-<script
-      
-    ></script>
+<script></script>
     
 <template>
     <div>
-      <ChartBlock/>
+     <Inbox/>
     </div>
 </template>
 <style scope>
