@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <AdminUploadCertificate/>
+        <!-- <BarChart/> -->
   </div>
 </template>
 

@@ -2,7 +2,7 @@
 <template>
     <div>
     <NavBar/>
-    <UserSaleHistory/>
+    <SaleList/>
     </div>
 </template>
 <style scoped></style>

@@ -161,11 +161,13 @@
                                                     class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
                                                     View
                                                 </button>
-
-                                                <button
+                                                <NuxtLink to="buy_form">
+                                                    <button
                                                     class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
                                                     Click to Buy
-                                                </button>
+                                                    </button>
+                                                </NuxtLink>
+                                              
                                             </div>
                                         </td>
                                     </tr>

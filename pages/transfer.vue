@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 <template>
     <div>
-        <NavBar/>
-        <UserHistoryUser/>
+    <NavBar/>
+    <TransferShare/>
     </div>
 </template>
-<style></style>
+<style scoped></style>

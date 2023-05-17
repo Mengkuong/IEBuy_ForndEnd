@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <AdminLogin/>
+    
+    <ViewSale/>
   </div>
 </template>
 

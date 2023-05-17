@@ -2,7 +2,7 @@
 <template>
     <div>
     <NavBar/>
-    <AdminSaleForm/>
+    <SaleForm/>
     </div>
 </template>
 <style scoped></style>

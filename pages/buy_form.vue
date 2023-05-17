@@ -2,8 +2,8 @@
 
 <template>
   <div>
-   <NavBar/>
-   <AdminUserList />
+    <NavBar/>
+    <BuyForm/>
   </div>
 </template>
 

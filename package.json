@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "ajax": "^0.0.4",
-    "chart.js": "^4.2.1",
+    "chart.js": "2.9.3",
     "flowbite": "^1.6.3",
     "sass": "^1.59.2",
     "vite-node": "^0.29.7"
