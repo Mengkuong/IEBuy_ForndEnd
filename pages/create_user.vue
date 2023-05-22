@@ -2,7 +2,7 @@
 
 <template>
   <div>
-   <AddItem/>
+    <CreateUser/>
   </div>
 </template>
 

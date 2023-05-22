@@ -3,7 +3,7 @@
 <template>
   <div>
     <NavBar/>
-   <UserBuyShareList/>
+   <BuyShareList/>
   </div>
 </template>
 

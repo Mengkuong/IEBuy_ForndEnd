@@ -6,7 +6,7 @@ import UserRegister from '~~/components/user/UserRegister.vue';
 <template>
   <div>
     <!-- <NavBar/> -->
-    <UserRegister/>
+    <RegisterAccount/>
   </div>
 </template>
 

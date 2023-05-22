@@ -68,7 +68,7 @@
                     <div class="inline-block min-w-[100%] py-2 align-middle md:px-6 lg:px-8  font-serif">
                         <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
                             <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                                <thead class="bg-gray-50 dark:bg-gray-800">
+                                <thead class="bg-blue-100 dark:bg-gray-800">
                                     <tr>
                                         <th scope="col"
                                             class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -98,11 +98,13 @@
                                             class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                             Date
                                         </th>
-
-
                                         <th scope="col"
                                             class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                            Customer
+                                            Buyer
+                                        </th>
+                                        <th scope="col"
+                                            class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                            Phone Number
                                         </th>
 
                                         <th scope="col"
@@ -112,10 +114,12 @@
                                         <th scope="col"
                                             class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                             Total Price </th>
-
                                         <th scope="col"
                                             class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                            Actions
+                                            From Seller </th>
+                                        <th scope="col"
+                                            class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                            Phone Number
                                         </th>
                                     </tr>
                                 </thead>
@@ -141,48 +145,20 @@
                                                 <div>
                                                     <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur
                                                         Melo</h2>
-                                                    <p class="text-xs font-normal text-gray-600 dark:text-gray-400">
-                                                        authurmelo@example.com</p>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                            20</td>
+                                            098 98 98 75</td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            100</td>
                                         <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                                             <div
                                                 class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
 
-                                                <h2 class="text-sm font-normal">20$</h2>
+                                                <h2 class="text-sm font-normal">200$</h2>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                            <div class="flex items-center gap-x-6">
-                                                <button
-                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                    View
-                                                </button>
-
-                                                <button
-                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
-                                                    Click to Buy
-                                                </button>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td
-                                            class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
-                                            <div class="inline-flex items-center gap-x-3">
-                                                <input type="checkbox"
-                                                    class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
-
-                                                <span>#3065</span>
-                                            </div>
-                                        </td>
-                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
-                                            5, 2022</td>
-
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             <div class="flex items-center gap-x-2">
                                                 <img class="object-cover w-8 h-8 rounded-full"
@@ -191,33 +167,13 @@
                                                 <div>
                                                     <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane
                                                     </h2>
-                                                    <p class="text-xs font-normal text-gray-600 dark:text-gray-400">
-                                                        andi@example.com</p>
+
                                                 </div>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                            20</td>
-                                        <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                            <div
-                                                class="inline-flex items-center px-3 py-1 text-red-500 rounded-full gap-x-2 bg-red-100/60 dark:bg-gray-800">
-                                               
 
-                                                <h2 class="text-sm font-normal">10$</h2>
-                                            </div>
-                                        </td>
                                         <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                            <div class="flex items-center gap-x-6">
-                                                <button
-                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                    View
-                                                </button>
-
-                                                <button
-                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
-                                                    Click to Buy
-                                                </button>
-                                            </div>
+                                            096 96 87 567
                                         </td>
                                     </tr>
 
@@ -228,46 +184,49 @@
                                                 <input type="checkbox"
                                                     class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
 
-                                                <span>#3064</span>
+                                                <span>#3066</span>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
-                                            5, 2022</td>
+                                            6, 2022</td>
 
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             <div class="flex items-center gap-x-2">
                                                 <img class="object-cover w-8 h-8 rounded-full"
-                                                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
+                                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                                                     alt="">
                                                 <div>
-                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Kate
-                                                        Morrison</h2>
-                                                    <p class="text-xs font-normal text-gray-600 dark:text-gray-400">
-                                                        kate@example.com</p>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur
+                                                        Melo</h2>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                            20</td>
+                                            098 98 98 75</td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            100</td>
                                         <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                                             <div
                                                 class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
 
-                                                <h2 class="text-sm font-normal">20$</h2>
+                                                <h2 class="text-sm font-normal">200$</h2>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                            <div class="flex items-center gap-x-6">
-                                                <button
-                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                    View
-                                                </button>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            <div class="flex items-center gap-x-2">
+                                                <img class="object-cover w-8 h-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                    alt="">
+                                                <div>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane
+                                                    </h2>
 
-                                                <button
-                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
-                                                    Click to Buy
-                                                </button>
+                                                </div>
                                             </div>
+                                        </td>
+
+                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                            096 96 87 567
                                         </td>
                                     </tr>
 
@@ -278,46 +237,49 @@
                                                 <input type="checkbox"
                                                     class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
 
-                                                <span>#3063</span>
+                                                <span>#3066</span>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
-                                            4, 2022</td>
+                                            6, 2022</td>
 
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             <div class="flex items-center gap-x-2">
                                                 <img class="object-cover w-8 h-8 rounded-full"
-                                                    src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&q=80"
+                                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                                                     alt="">
                                                 <div>
-                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Candice
-                                                        Wu</h2>
-                                                    <p class="text-xs font-normal text-gray-600 dark:text-gray-400">
-                                                        candice@example.com</p>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur
+                                                        Melo</h2>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                            20</td>
+                                            098 98 98 75</td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            100</td>
                                         <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                                             <div
                                                 class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
 
-                                                <h2 class="text-sm font-normal">20$</h2>
+                                                <h2 class="text-sm font-normal">200$</h2>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                            <div class="flex items-center gap-x-6">
-                                                <button
-                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                    View
-                                                </button>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            <div class="flex items-center gap-x-2">
+                                                <img class="object-cover w-8 h-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                    alt="">
+                                                <div>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane
+                                                    </h2>
 
-                                                <button
-                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
-                                                    Click to Buy
-                                                </button>
+                                                </div>
                                             </div>
+                                        </td>
+
+                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                            096 96 87 567
                                         </td>
                                     </tr>
 
@@ -328,47 +290,102 @@
                                                 <input type="checkbox"
                                                     class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
 
-                                                <span>#3062</span>
+                                                <span>#3066</span>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
-                                            4, 2022</td>
+                                            6, 2022</td>
 
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             <div class="flex items-center gap-x-2">
                                                 <img class="object-cover w-8 h-8 rounded-full"
-                                                    src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=644&q=80"
+                                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                                                     alt="">
                                                 <div>
-                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Orlando
-                                                        Diggs</h2>
-                                                    <p class="text-xs font-normal text-gray-600 dark:text-gray-400">
-                                                        orlando@example.com</p>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur
+                                                        Melo</h2>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                            20</td>
+                                            098 98 98 75</td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            100</td>
                                         <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                                             <div
-                                                class="inline-flex items-center px-3 py-1 text-gray-500 rounded-full gap-x-2 bg-gray-100/60 dark:bg-gray-800">
-                                               
+                                                class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
 
-                                                <h2 class="text-sm font-normal">10$</h2>
+                                                <h2 class="text-sm font-normal">200$</h2>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                            <div class="flex items-center gap-x-6">
-                                                <button
-                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                    View
-                                                </button>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            <div class="flex items-center gap-x-2">
+                                                <img class="object-cover w-8 h-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                    alt="">
+                                                <div>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane
+                                                    </h2>
 
-                                                <button
-                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
-                                                    Click to Buy
-                                                </button>
+                                                </div>
                                             </div>
+                                        </td>
+
+                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                            096 96 87 567
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td
+                                            class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                            <div class="inline-flex items-center gap-x-3">
+                                                <input type="checkbox"
+                                                    class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                                <span>#3066</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
+                                            6, 2022</td>
+
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            <div class="flex items-center gap-x-2">
+                                                <img class="object-cover w-8 h-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                                                    alt="">
+                                                <div>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Arthur
+                                                        Melo</h2>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            098 98 98 75</td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            100</td>
+                                        <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+                                            <div
+                                                class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
+
+                                                <h2 class="text-sm font-normal">200$</h2>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                            <div class="flex items-center gap-x-2">
+                                                <img class="object-cover w-8 h-8 rounded-full"
+                                                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                                                    alt="">
+                                                <div>
+                                                    <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Andi Lane
+                                                    </h2>
+
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                            096 96 87 567
                                         </td>
                                     </tr>
                                 </tbody>

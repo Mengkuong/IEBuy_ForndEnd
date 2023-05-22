@@ -1,9 +1,8 @@
 <script>
-
 </script>
 <template>
    <nav
-      class="bg-yellow-500 fixed top-0 z-50 w-full border-b border-yellow-400 dark:bg-gray-800 dark:border-gray-700  font-serif">
+      class="bg-gradient-to-r from-sky-400 to-cyan-300 fixed top-0 z-50 w-full border-b border-blue-200 dark:bg-gray-800 dark:border-gray-700  font-serif">
       <div class="px-3 py-3 lg:px-5 lg:pl-3">
          <div class="flex items-center justify-between">
             <div class="flex items-center justify-start">
@@ -19,7 +18,7 @@
                   </svg>
                </button>
                <a href="https://iebuyexpress.com/" class="flex ml-2 md:mr-24">
-                  <img src="icon (1).png" class="h-12 mr-3 " alt="FlowBite Logo" />
+                  <img src="https://iebuyexpress.com/icon.png" class="h-12 mr-3 " alt="FlowBite Logo" />
                   <span
                      class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">IEBuy</span>
                </a>
@@ -47,15 +46,15 @@
                         </p>
                      </div>
                      <ul class="py-1" role="none">
-                        <NuxtLink to="dashboard">
-                           <div 
+                        <NuxtLink to="">
+                           <div
                               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                               role="menuitem">Dashboard</div>
-                       
+
                         </NuxtLink>
-                          
+
                         <li>
-                           <a href="change_profile"
+                           <a href="#"
                               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
                               role="menuitem">Settings</a>
                         </li>
@@ -78,9 +77,9 @@
    </nav>
 
    <aside id="logo-sidebar"
-      class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-yellow-500 border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+      class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gradient-to-r from-sky-400 to-cyan-300  border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
       aria-label="Sidebar">
-      <div class="h-full px-3 pb-4 overflow-y-auto bg-yellow-500 dark:bg-gray-800 font-serif">
+      <div class="h-full px-3 pb-4 overflow-y-auto bg-gradient-to-r from-sky-400 to-cyan-300 dark:bg-gray-800 font-serif">
          <ul class="space-y-2">
             <li>
                <a href="/"
@@ -95,22 +94,7 @@
                </a>
             </li>
             <li>
-               <a href="#"
-                  class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                  <svg aria-hidden="true"
-                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
-                     </path>
-                  </svg>
-                  <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
-                  <span
-                     class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
-               </a>
-            </li>
-            <li>
-<!-- E-Commerce Dropdown -->
+               <!-- E-Commerce Dropdown -->
                <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   aria-controls="dropdown-ecommerce" data-collapse-toggle="dropdown-ecommerce">
@@ -131,16 +115,14 @@
                </button>
                <ul id="dropdown-ecommerce" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="buy_list"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Buy Market</a>
+                     <a href="data_management"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Data
+                        Management</a>
                   </li>
                   <li>
-                     <a href="sale_history"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sell List</a>
-                  </li>
-                  <li>
-                     <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                     <a href="company_payment"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Company
+                        Payment</a>
                   </li>
                </ul>
             </li>
@@ -167,7 +149,7 @@
                </a>
             </li>
             <li>
-<!-- User DropDown -->
+
                <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
@@ -192,16 +174,51 @@
                         List</a>
                   </li>
                   <li>
-                     <a href="user_profile"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Profile</a>
+                     <a href="sale_list"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sale
+                        List</a>
                   </li>
                   <li>
-                     <a href="change_profile"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Setting</a>
+                     <a href="buy_list"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Buy
+                        List</a>
                   </li>
                </ul>
             </li>
+            <li>
 
+               <button type="button"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  aria-controls="dropdown-settings" data-collapse-toggle="dropdown-settings">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                     <path fill-rule="evenodd"
+                        d="M8.34 1.804A1 1 0 019.32 1h1.36a1 1 0 01.98.804l.295 1.473c.497.144.971.342 1.416.587l1.25-.834a1 1 0 011.262.125l.962.962a1 1 0 01.125 1.262l-.834 1.25c.245.445.443.919.587 1.416l1.473.294a1 1 0 01.804.98v1.361a1 1 0 01-.804.98l-1.473.295a6.95 6.95 0 01-.587 1.416l.834 1.25a1 1 0 01-.125 1.262l-.962.962a1 1 0 01-1.262.125l-1.25-.834a6.953 6.953 0 01-1.416.587l-.294 1.473a1 1 0 01-.98.804H9.32a1 1 0 01-.98-.804l-.295-1.473a6.957 6.957 0 01-1.416-.587l-1.25.834a1 1 0 01-1.262-.125l-.962-.962a1 1 0 01-.125-1.262l.834-1.25a6.957 6.957 0 01-.587-1.416l-1.473-.294A1 1 0 011 10.68V9.32a1 1 0 01.804-.98l1.473-.295c.144-.497.342-.971.587-1.416l-.834-1.25a1 1 0 01.125-1.262l.962-.962A1 1 0 015.38 3.03l1.25.834a6.957 6.957 0 011.416-.587l.294-1.473zM13 10a3 3 0 11-6 0 3 3 0 016 0z"
+                        clip-rule="evenodd" />
+                  </svg>
+
+
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Settings</span>
+                  <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+               <ul id="dropdown-settings" class="hidden py-2 space-y-2">
+                  <li>
+                     <a href="profile"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                        Profile</a>
+                  </li>
+                  <li>
+                     <a href=""
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                        Security</a>
+                  </li>
+               </ul>
+            </li>
             <li>
                <a href="admin_login"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -216,18 +233,20 @@
                </a>
             </li>
             <li>
-               <a href="register"
-               class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-               <svg aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                     d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
-                     clip-rule="evenodd"></path>
-               </svg>
-               <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
-            </a>
-         </li>
-      </ul>
-   </div>
-</aside></template>
+               <a href="user_register"
+                  class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <svg aria-hidden="true"
+                     class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                     fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd"
+                        d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                        clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="flex-1 ml-3 whitespace-nowrap">Create Account</span>
+               </a>
+            </li>
+
+         </ul>
+      </div>
+   </aside>
+</template>

@@ -5,7 +5,7 @@
     class="relative min-h-screen font-serif flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8 bg-gray-200 bg-no-repeat bg-cover  ">
     <div class="absolute opacity-60 inset-0 z-0"></div>
     <div class="sm:max-w-lg w-full p-10 bg-white rounded-xl z-10">
-      <a href="/"
+      <a href="dashboard"
                             class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
                             <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
         </p>
         <div>
           <button type="submit"
-            class="my-5 w-full flex justify-center bg-yellow-500 text-black p-3  rounded-full tracking-wide
+            class="my-5 w-full flex justify-center bg-gradient-to-r from-blue-400 to-emerald-400  text-black p-3  rounded-full tracking-wide
                                       font-semibold  focus:outline-none focus:shadow-outline hover:bg-yellow-600 shadow-lg cursor-pointer transition ease-in duration-300">
             Upload
           </button>

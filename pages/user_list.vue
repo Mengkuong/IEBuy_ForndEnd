@@ -3,7 +3,7 @@
 <template>
   <div>
    <NavBar/>
-   <AdminUserList />
+   <UserList />
   </div>
 </template>
 

@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <AdminUploadCertificate/>
+    <UploadCertificate/>
   </div>
 </template>
 

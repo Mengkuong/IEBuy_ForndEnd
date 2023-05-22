@@ -2,7 +2,8 @@
 
 <template>
   <div>
-   <AddItem/>
+    <NavBar/>
+    <Data/>
   </div>
 </template>
 

@@ -2,7 +2,8 @@
 
 <template>
   <div>
-   <UserLogin />
+    <NavBar/>
+   <AdminProfile/>
   </div>
 </template>
 

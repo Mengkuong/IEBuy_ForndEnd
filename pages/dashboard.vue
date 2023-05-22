@@ -3,7 +3,7 @@
 <template>
   <div>
     <NavBar/>
-   <Dashboard/>
+    <Dashboard/>
   </div>
 </template>
 

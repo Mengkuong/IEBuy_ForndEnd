@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <SuperAdminRegisterAccount/>
+   <NavBar/>
+   <UpdateUser/>
   </div>
 </template>
 

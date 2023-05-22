@@ -1,8 +1,10 @@
 <script lang="ts" setup></script>
+
 <template>
-    <div>
+  <div>
     <NavBar/>
-    <AdminSaleForm/>
-    </div>
+    <DataManagement/>
+  </div>
 </template>
+
 <style scoped></style>
