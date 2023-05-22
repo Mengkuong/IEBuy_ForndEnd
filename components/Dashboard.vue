@@ -1,6 +1,10 @@
 
 <template>
+<<<<<<< HEAD
    <div class="p-4 sm:ml-64 font-serif bg-white">
+=======
+   <div class="p-4 sm:ml-64 font-serif">
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
       <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
          <div class="flex flex-wrap my-5 -mx-2">
             <div class="w-full lg:w-1/3 p-2">
@@ -88,6 +92,7 @@
             
          </div>
 
+<<<<<<< HEAD
          
          <div class="grid grid-cols-2">
             <div>
@@ -100,6 +105,20 @@
                   </h2>
                   <button
                      class="ml-[100px] block text-blue-700 text-sm rounded px-1 py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
+=======
+         <LineChart />
+         <div class="grid grid-cols-2">
+            <div>
+              <CompanyPayment/>
+            </div>
+            <div class=" bg-gray-50 ml-[110px]  px-4 py-3 shadow-lg rounded mb-2 h-full">
+               <div class="rounded-t mb-5 px-2 py-3 bg-transparent flex">
+                  <h2 class="text-blueGray-700 text-xl font-semibold">
+                     Latest Sale
+                  </h2>
+                  <button
+                     class="ml-[250px] block text-blue-700 text-sm rounded px-1 py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                      View All
                   </button>
                </div>
@@ -226,16 +245,27 @@
                            </div>
                         </div>
 
+<<<<<<< HEAD
                         <div class="ml-[190px] ">
                            <a href=""
                               class="flex text-blue-700 text-sm rounded  py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
                               User Report<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+=======
+                        <div class="ml-[220px] ">
+                           <button
+                              class="flex text-blue-700 text-sm rounded  py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
+                              History Record<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                                  class="w-5 h-5 ">
                                  <path fill-rule="evenodd"
                                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
                                     clip-rule="evenodd" />
                               </svg>
+<<<<<<< HEAD
                            </a>
+=======
+                           </button>
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                         </div>
 
                      </div>
@@ -243,7 +273,10 @@
                </ul>
             </div>
          </div>
+<<<<<<< HEAD
          <UserSignInList/>
+=======
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
       </div>
 
 </div></template>

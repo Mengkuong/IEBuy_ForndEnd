@@ -159,6 +159,39 @@
                                                 <h2 class="text-sm font-normal">200$</h2>
                                             </div>
                                         </td>
+<<<<<<< HEAD
+=======
+                                        <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                            <div class="flex items-center gap-x-6">
+                                                <button
+                                                    class="text-gray-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
+                                                    View
+                                                </button>
+                                                <NuxtLink to="buy_form">
+                                                    <button
+                                                    class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                                    Click to Buy
+                                                    </button>
+                                                </NuxtLink>
+                                              
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td
+                                            class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                            <div class="inline-flex items-center gap-x-3">
+                                                <input type="checkbox"
+                                                    class="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700">
+
+                                                <span>#3065</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
+                                            5, 2022</td>
+
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             <div class="flex items-center gap-x-2">
                                                 <img class="object-cover w-8 h-8 rounded-full"

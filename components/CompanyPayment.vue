@@ -1,5 +1,6 @@
 <script lang="ts" setup></script>
 <template>
+<<<<<<< HEAD
      <div class=" p-4 sm:ml-64 font-serif">
         <div class="relative overflow-x-auto  sm:rounded-lg mt-[100px] ml-5 ">
             <nav class="flex mb-4" aria-label="Breadcrumb">
@@ -49,6 +50,21 @@
             <div class="flex flex-col">
                 <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div class="inline-block min-w-[100%] py-2 align-middle md:px-6 lg:px-8  font-serif">
+=======
+     <div class=" bg-gray-50 w-[115%]  px-4 py-3 shadow-lg rounded mb-2 h-full">
+        <div class="rounded-t px-2 py-3 bg-transparent ml-3">
+                  <h2 class="text-blueGray-700 text-xl font-semibold">
+                     Latest Update Payment
+                  </h2>
+                  <h10 class="text-bluegray-400 text-sm">
+                     Company Payment Update list
+                  </h10>
+               </div>
+        <section class="container px-4 mx-auto">
+            <div class="flex flex-col">
+                <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-[130%] py-2 align-middle md:px-6 lg:px-8  font-serif">
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                         <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
                             <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                                 <thead class="bg-gray-50 dark:bg-gray-800">
@@ -208,6 +224,7 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="flex items-center justify-between mt-6 w-1/2 ml-[330px]">
                 <a href="#"
                     class="flex items-center px-5 py-2 text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
@@ -249,6 +266,9 @@
                     </svg>
                 </a>
             </div>
+=======
+
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
         </section>
 
 

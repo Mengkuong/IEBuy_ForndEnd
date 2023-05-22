@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <div class="relative flex flex-col min-w-0 break-words w-[125%] mb-6 shadow-lg rounded bg-gray-50">
+=======
+  <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-gray-50">
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
     <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
       <div class="flex flex-wrap items-center">
         <div class="relative w-full max-w-full flex-grow flex-1">
@@ -14,7 +18,11 @@
     </div>
     <div class="p-4 flex-auto">
       <!-- Chart -->
+<<<<<<< HEAD
       <div class="relative h-[400px]">
+=======
+      <div class="relative h-[350px]">
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
         <canvas id="line-chart"></canvas>
       </div>
     </div>

@@ -94,7 +94,11 @@
                </a>
             </li>
             <li>
+<<<<<<< HEAD
                <!-- E-Commerce Dropdown -->
+=======
+<!-- E-Commerce Dropdown -->
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   aria-controls="dropdown-ecommerce" data-collapse-toggle="dropdown-ecommerce">
@@ -120,14 +124,23 @@
                         Management</a>
                   </li>
                   <li>
+<<<<<<< HEAD
                      <a href="company_payment"
                         class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Company
                         Payment</a>
+=======
+                     <a href="sale_list"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sell List</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
                   </li>
                </ul>
             </li>
             <li>
-               <a href="#"
+               <a href="inbox"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg aria-hidden="true"
                      class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -140,12 +153,11 @@
                      </path>
                   </svg>
 
-                  <NuxtLink to="inbox">
+                  
                      <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
                      <span
                         class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
-                  </NuxtLink>
-
+                  
                </a>
             </li>
             <li>
@@ -159,7 +171,7 @@
                         d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
                   </svg>
 
-                  <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>User</span>
+                  <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>History</span>
                   <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                      xmlns="http://www.w3.org/2000/svg">
                      <path fill-rule="evenodd"
@@ -169,9 +181,14 @@
                </button>
                <ul id="dropdown-example" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="user_list"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Users
-                        List</a>
+                     <a href="sale_record"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Sell History
+                        </a>
+                  </li>
+                  <li>
+                     <a href="buy_history"
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Buy History
+                        </a>
                   </li>
                   <li>
                      <a href="sale_list"
@@ -220,7 +237,7 @@
                </ul>
             </li>
             <li>
-               <a href="admin_login"
+               <a href="user_login"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                   <svg aria-hidden="true"
                      class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -232,6 +249,7 @@
                   <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
                </a>
             </li>
+<<<<<<< HEAD
             <li>
                <a href="user_register"
                   class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -250,3 +268,8 @@
       </div>
    </aside>
 </template>
+=======
+      </ul>
+   </div>
+</aside></template>
+>>>>>>> 7968c4f00e17c6c9ce7115abde493274294a4ac4
