@@ -2,8 +2,7 @@
     
 <template>
     <div>
-        <NavBar/>
-        <SaleList/>
+        <AdminLogin/>
     </div>
 </template>
 <style scope>

@@ -43,38 +43,11 @@
                     </li>
                 </ol>
             </nav>
-            <h1 class="font-bold mt-2 text-3xl  h-[150%]">Sale Share Stock</h1>
+            <h1 class="font-bold mt-2 text-3xl  h-[150%]">User Sale List</h1>
         </div>
         <div class="relative overflow-x-auto  w-[100%] mt-2 h-max font-serif">
             <div class="bg-white p-3  rounded-lg">
                 <div class="flex items-center justify-between py-4 bg-white dark:bg-gray-800 pr-5 ml-5 ">
-                    <div class="flex ">
-
-                        <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction"
-                            class="inline-flex items-center mr-2 mb-2 text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                            type="button">
-                            <span class="sr-only">Action button</span>
-                            Action
-                            <svg class="w-3 h-3 ml-2" aria-hidden="true" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                                </path>
-                            </svg>
-                        </button>
-                        <NuxtLink to="sale_form">
-                            <button type="button"
-                                class="inline-flex focus:outline-none ml-1 font-medium rounded-lg text-sm px-5 py-2.5 bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300  mr-2 mb-2 dark:focus:ring-yellow-900">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-5 h-5 mr-2.5">
-                                    <path fill-rule="evenodd"
-                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-11.25a.75.75 0 00-1.5 0v2.5h-2.5a.75.75 0 000 1.5h2.5v2.5a.75.75 0 001.5 0v-2.5h2.5a.75.75 0 000-1.5h-2.5v-2.5z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <span class="">Add new Sell</span>
-
-                            </button>
-                        </NuxtLink>
-                    </div>
                     <label for="table-search" class="sr-only">Search</label>
                     <div class="relative">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -96,10 +69,11 @@
                             <div class="inline-block w-[100%] py-2 md:px-6 lg:px-8 font-serif text-s">
                                 <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
                                     <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                                        <thead class="bg-gray-50 dark:bg-gray-800 ">
+                                        <thead
+                                            class="bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-400 to-blue-800 dark:bg-gray-800">
                                             <tr>
                                                 <th scope="col"
-                                                    class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    class="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
                                                     <div class="flex items-center gap-x-3">
 
                                                         <button class="flex items-center gap-x-2">
@@ -125,31 +99,31 @@
                                                 </th>
 
                                                 <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
                                                     Shares
                                                 </th>
                                                 <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
+                                                    Customer
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
                                                     Total Price
                                                 </th>
                                                 <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
                                                     Phone Number
                                                 </th>
                                                 <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-black dark:text-gray-400">
                                                     Date
-                                                </th>
-                                                <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Action
                                                 </th>
 
                                             </tr>
                                         </thead>
                                         <tbody
                                             class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                                            <tr>
+                                            <tr class="bg-gray-50">
                                                 <td
                                                     class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
                                                     <div class="inline-flex items-center gap-x-3">
@@ -159,6 +133,9 @@
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                                     20</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Khin Phearin</td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                                     100$</td>
@@ -172,19 +149,64 @@
                                                     Jan
                                                     6, 2022</td>
 
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center space-x-1">
-                                                        <button
-                                                            class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center">
-                                                            Edit
-                                                        </button>
+                                            </tr>
 
-                                                        <button
-                                                            class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center">
-                                                           Delete
-                                                        </button>
+                                            <tr class="bg-yellow-50">
+                                                <td
+                                                    class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                                    <div class="inline-flex items-center gap-x-3">
+                                                        <span>#3066</span>
                                                     </div>
                                                 </td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    20</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Hai Mengkoung</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    100$</td>
+
+
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    096 96 86 484</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Jan
+                                                    6, 2022</td>
+
+
+                                            </tr>
+
+                                            <tr class="bg-green-50">
+                                                <td
+                                                    class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                                    <div class="inline-flex items-center gap-x-3">
+                                                        <span>#3066</span>
+                                                    </div>
+                                                </td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    20</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Hourt Koemly</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    100$</td>
+
+
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    096 96 86 484</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Jan
+                                                    6, 2022</td>
+
+
                                             </tr>
 
                                             <tr>
@@ -199,42 +221,7 @@
                                                     20</td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    100$</td>
-
-
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    096 96 86 484</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    6, 2022</td>
-
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center space-x-1">
-                                                        <button
-                                                            class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center">
-                                                            Edit
-                                                        </button>
-
-                                                        <button
-                                                            class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center">
-                                                           Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td
-                                                    class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
-                                                    <div class="inline-flex items-center gap-x-3">
-                                                        <span>#3066</span>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    20</td>
+                                                    Hourt Koemly</td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                                     100$</td>
@@ -248,57 +235,7 @@
                                                     Jan
                                                     6, 2022</td>
 
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center space-x-1">
-                                                        <button
-                                                            class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center">
-                                                            Edit
-                                                        </button>
 
-                                                        <button
-                                                            class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center">
-                                                           Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td
-                                                    class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
-                                                    <div class="inline-flex items-center gap-x-3">
-                                                        <span>#3066</span>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    20</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    100$</td>
-
-
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    096 96 86 484</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    6, 2022</td>
-
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center space-x-1">
-                                                        <button
-                                                            class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center">
-                                                            Edit
-                                                        </button>
-
-                                                        <button
-                                                            class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center">
-                                                           Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
                                             </tr>
                                             <tr>
                                                 <td
@@ -312,6 +249,9 @@
                                                     20</td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    Hourt Koemly</td>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                                     100$</td>
 
 
@@ -323,19 +263,7 @@
                                                     Jan
                                                     6, 2022</td>
 
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center space-x-1">
-                                                        <button
-                                                            class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center">
-                                                            Edit
-                                                        </button>
 
-                                                        <button
-                                                            class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center">
-                                                           Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

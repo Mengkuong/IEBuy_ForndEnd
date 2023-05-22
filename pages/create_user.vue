@@ -1,8 +1,10 @@
 <script></script>
+    
 <template>
     <div>
         <NavBar/>
-        <SaleHistory/>
+        <CreateUser/>
     </div>
 </template>
-<style></style>
+<style scope>
+</style>

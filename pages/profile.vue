@@ -3,7 +3,7 @@
 <template>
     <div>
         <NavBar/>
-        <SaleList/>
+        <AdminProfile/>
     </div>
 </template>
 <style scope>

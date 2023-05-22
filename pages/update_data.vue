@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <ChangeProfile/>
+    <UpdateData/>
   </div>
 </template>
 

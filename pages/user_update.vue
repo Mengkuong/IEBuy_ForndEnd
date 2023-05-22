@@ -2,7 +2,8 @@
 
 <template>
   <div>
-   <AdminAddItem/>
+   <NavBar/>
+   <UpdateUser/>
   </div>
 </template>
 

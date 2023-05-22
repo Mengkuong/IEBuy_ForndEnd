@@ -1,10 +1,10 @@
-<script lang="ts" setup></script>
-
+<script></script>
+    
 <template>
-  <div>
-    <NavBar/>
-    <BuyShareList/>
-  </div>
+    <div>
+        <NavBar/>
+        <BuyShareList/>
+    </div>
 </template>
-
-<style scoped></style>
+<style scope>
+</style>

@@ -14,7 +14,7 @@
     </div>
     <div class="p-4 flex-auto">
       <!-- Chart -->
-      <div class="relative h-[350px]">
+      <div class="relative h-[400px]">
         <canvas id="line-chart"></canvas>
       </div>
     </div>

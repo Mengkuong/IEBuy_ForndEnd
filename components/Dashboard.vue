@@ -87,19 +87,17 @@
             </div>
             
          </div>
-
-         <LineChart />
          <div class="grid grid-cols-2">
-            <div>
-              <CompanyPayment/>
+            <div class="w-[120%]">
+               <LineChart />
             </div>
-            <div class=" bg-gray-50 ml-[110px]  px-4 py-3 shadow-lg rounded mb-2 h-full">
+            <div class=" bg-gray-50 ml-[130px]  px-4 py-3 shadow-lg rounded mb-2 h-[100%]">
                <div class="rounded-t mb-5 px-2 py-3 bg-transparent flex">
                   <h2 class="text-blueGray-700 text-xl font-semibold">
-                     Latest Sale
+                     Latest Customer
                   </h2>
                   <button
-                     class="ml-[250px] block text-blue-700 text-sm rounded px-1 py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
+                     class="ml-[200px] block text-blue-700 text-sm rounded px-1 py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
                      View All
                   </button>
                </div>
@@ -184,9 +182,6 @@
                         </div>
                      </div>
                   </li>
-                  
-                 
-                
                   <li class="pt-3 pb-0 sm:pt-4 mt-5">
                      <div class="rounded-t px-1 py-3 bg-transparent flex">
                         <div class="max-w-md divide-y mt-2 divide-gray-200 dark:divide-gray-700">
@@ -229,7 +224,7 @@
                         <div class="ml-[220px] ">
                            <button
                               class="flex text-blue-700 text-sm rounded  py-3  hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs">
-                              History Record<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                              User Report<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                  class="w-5 h-5 ">
                                  <path fill-rule="evenodd"
                                     d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
@@ -243,6 +238,7 @@
                </ul>
             </div>
          </div>
+         <UserSignInList/>
       </div>
-
+      
 </div></template>

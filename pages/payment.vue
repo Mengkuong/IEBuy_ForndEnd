@@ -3,7 +3,7 @@
 <template>
     <div>
         <NavBar/>
-        <SaleList/>
+        <CompanyPayment/>
     </div>
 </template>
 <style scope>

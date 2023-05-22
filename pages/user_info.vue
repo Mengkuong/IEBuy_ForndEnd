@@ -1,7 +1,7 @@
-<script lang="ts" setup></script>
+<script setup></script>
 <template>
     <div>
         <NavBar/>
-        <UserProfile />
+        <UserInformation/>
     </div>
 </template>

@@ -2,7 +2,7 @@
 <template>
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 font-serif">
         <div class=" p-4 sm:ml-64 font-serif">
-            <nav class="flex mt-11 ml-[100px]" aria-label="Breadcrumb">
+            <nav class="flex ml-[100px]" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">
                         <a href="/"
@@ -17,8 +17,8 @@
                         </a>
                     </li>
                     <li class="inline-flex items-center">
-                        <a href="sale_history"
-                            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        <a href="data_management"
+                            class="inline-flex items-center text-sm font-medium text-gray-700  dark:text-gray-400 dark:hover:text-white">
                             <div class="flex items-center">
                                 <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -26,11 +26,10 @@
                                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                               View
+                                Update 
                             </div>
                         </a>
                     </li>
-
                     <li aria-current="page">
                         <div class="flex items-center">
                             <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
@@ -39,7 +38,7 @@
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Sale</span>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Data</span>
                         </div>
                     </li>
                 </ol>
@@ -52,12 +51,12 @@
                     <div class="flex items-center space-x-5">
                         <div
                             class="h-14 w-14 rounded-full flex flex-shrink-0 justify-center items-center text-yellow-500 text-2xl font-mono">
-                            <img src="icon (1).png" />
+                            <img src="https://iebuyexpress.com/icon.png" />
                         </div>
                         <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
-                            <h2 class="leading-relaxed h-[50%]">View shares form</h2>
-                            <p class="text-sm text-gray-500 font-normal leading-relaxed">Complete information for sale your
-                                shares
+                            <h2 class="leading-relaxed h-[50%]">Update Data</h2>
+                            <p class="text-sm text-gray-500 font-normal leading-relaxed">Complete information for update
+                                
                             </p>
                         </div>
                     </div>
@@ -80,45 +79,33 @@
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
-                                <div class="flex flex-col">
-                                    <label class="leading-loose">Price of Each share</label>
-                                    <input type="number"
-                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="Price">
-                                </div>
+                               
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Total Price</label>
                                     <input type="number"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="total">
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4">
+                                </div>`
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Customer Name</label>
-                                    <input type="text"
+                                    <label class="leading-loose">Status</label>
+                                    <input type=""
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="buyer name">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label class="leading-loose">Phone Number</label>
-                                    <input type="number"
-                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="phone number">
-                                </div>
+                                        placeholder="up, down or stable">
+                                </div>`
                             </div>
-                            <div class="flex flex-col">
-                                <label class="leading-loose">Invoice</label>
-                                <input type="input_field"
-                                    class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                    placeholder="">
-                            </div>
+                            
                         </div>
                         <div class="pt-4 flex items-center space-x-4">
                             <button
-                                class="bg-yellow-500 flex justify-center items-center w-full text-white px-4 py-2 rounded-md focus:outline-none">Edit</button>
+                                class="flex justify-center items-center bg-red-100 w-full text-gray-900 px-4 py-2 rounded-md focus:outline-none">
+                                <svg class="w-6 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg> Cancel
+                            </button>
                             <button
-                                class="bg-red-500 flex justify-center items-center w-full text-white px-4 py-2 rounded-md focus:outline-none">Delete</button>
+                                class="bg-blue-400 flex justify-center items-center w-full text-white px-4 py-2 rounded-md focus:outline-none">Create</button>
                         </div>
                     </div>
                 </div>
