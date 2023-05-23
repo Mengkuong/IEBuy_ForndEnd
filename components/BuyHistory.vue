@@ -1,4 +1,4 @@
-<script lang="ts" setup></script>
+
 <template>
     <div class=" p-4 sm:ml-64 font-serif">
         <div class="relative overflow-x-auto  sm:rounded-lg mt-[100px] ml-8 font-serif">
@@ -56,6 +56,10 @@
                                             <tr>
                                                 <th scope="col"
                                                     class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    Id
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                                     Buy
                                                 </th>
                                                 <th scope="col"
@@ -74,30 +78,27 @@
                                                 </th>
                                                 <th scope="col"
                                                     class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Actions
+                                                    Seller number
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    buyer number
                                                 </th>
                                             </tr>
                                         </thead>
-                                        <tbody
+                                        <tbody 
                                             class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                                            <tr>
-                                                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    <div
-                                                        class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
-                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M10 3L4.5 8.5L2 6" stroke="currentColor"
-                                                                stroke-width="1.5" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                        <h2 class="text-sm font-normal">Paid</h2>
-                                                    </div>
-                                                </td>
+                                            <tr v-for="(user,index) in data" :key="user.id">
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    6, 2022</td>
+                                                    {{ index + 1 }}
+                                                    </td>
+                                                
+                                               
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    {{ user.price_buy }}
+                                                  </td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                                     <div class="flex items-center gap-x-2">
@@ -106,26 +107,32 @@
                                                             alt="">
                                                         <div>
                                                             <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Arthur
-                                                                Melo</h2>
+                                                                {{ user.name_seller }}</h2>
+                                                                
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Monthly subscription</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        <button
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </button>
-
-
-                                                    </div>
+                                                    {{ user.shares }}
                                                 </td>
-                                            </tr>
+                                                <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    {{  user.phone_number_buyer  }}
+                                                  </td>
 
+                                                  <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    {{  user.date_buy  }} 
+                                                  </td>
+
+                                                  <td
+                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                    {{  user.phone_number_buyer  }} 
+                                                  </td>
+                                                
+                                            </tr>
+<!-- 
                                             <tr>
 
                                                 <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
@@ -315,7 +322,7 @@
 
                                                     </div>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -328,4 +335,53 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      data: []
+    };
+  },
+  mounted() {
+    this.getData(); // Automatically fetch data when the component is mounted
+  },
+  methods: {
+    async getData() {
+      try {
+        const access_token = localStorage.getItem('access_token');
+        const refresh_token = localStorage.getItem('refresh_token');
+
+        const response = await fetch('http://127.0.0.1:8000/api/user/Get_buy', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${access_token}`,
+            'x-refresh-token': refresh_token
+          },
+          credentials: 'include'
+        });
+
+        if (response.ok) {
+          const responseData = await response.json();
+          // Store the retrieved data
+          this.data = responseData.data;
+        } else if (response.status === 401) {
+          // Handle unauthorized error
+          console.error('Unauthorized: Refresh token expired or invalid');
+        } else {
+          // Handle other errors
+          console.error('Error:', response.statusText);
+        }
+      } catch (error) {
+        // Handle fetch error
+        console.error('Error:', error);
+      }
+    },
+    destroy(id) {
+      // Handle delete functionality
+      console.log('Deleting user with ID:', id);
+    }
+  }
+}
+</script>
 <style scoped></style>

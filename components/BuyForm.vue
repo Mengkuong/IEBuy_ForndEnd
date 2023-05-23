@@ -1,5 +1,6 @@
-<script lang="ts" setup></script>
+
 <template>
+     <form @submit.prevent="submit">
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 font-serif">
         <div class=" p-4 sm:ml-64 font-serif">
             <nav class="flex mt-11 ml-[100px]" aria-label="Breadcrumb">
@@ -45,7 +46,7 @@
                 </ol>
             </nav>
         </div>
-
+     
         <div class="relative py-3 sm:max-w-xl sm:mx-auto">
             <div class="relative px-4 py-10 bg-green-50 mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
                 <div class="max-w-md mx-auto">
@@ -54,6 +55,7 @@
                             class="h-14 w-14 rounded-full flex flex-shrink-0 justify-center items-center text-yellow-500 text-2xl font-mono">
                             <img src="icon (1).png" />
                         </div>
+                        
                         <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
                             <h2 class="leading-relaxed h-[50%]">Buy Form</h2>
                             <p class="text-sm text-gray-500 font-normal leading-relaxed">Complete information 
@@ -67,54 +69,135 @@
 
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Seller</label>
-                                    <input type="text"
+                                    <input type="text" v-model="name_seller"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="name of seller">
                                 </div>
-                                <div class="flex flex-col">
+                                 <!-- <div class="flex flex-col">
                                     <label class="leading-loose">Buyer</label>
                                     <input type="text"
                                         class="pr-12 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="name of buyer">
-                                </div>
+                                </div> -->
                             </div>
                             <div class="flex items-center space-x-4">
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Shares</label>
-                                    <input type="number"
+                                    <input type="text" v-model="price_buy"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="quantity of share">
                                 </div>
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Total Price</label>
-                                    <input type="number"
+                                    <input type="text" v-model="shares"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="total">
                                 </div>
                             </div>
                             <div class="flex flex-col">
-                                <label class="leading-loose">Phone Number</label>
-                                <input type="text"
+                                <label class="leading-loose">Phone Number Seller</label>
+                                <input type="text" v-model="phone_number_seller"
                                     class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                     placeholder="phone number">
                             </div>
+                            <div class="flex flex-col">
+                                <label class="leading-loose">Phone Number Buyer</label>
+                                <input type="text" v-model="phone_number_buyer"
+                                    class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                    placeholder="phone number">
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="leading-loose">Date</label>
+                                <input type="date" v-model="date_buy"
+                                    class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                    placeholder="Date">
+                            </div>
                         </div>
                         <div class="pt-4 flex items-center space-x-4">
-                            <button
+                            <!-- <button
                                 class="flex justify-center items-center bg-green-100 w-full text-gray-900 px-4 py-2 rounded-md focus:outline-none">
                                 <svg class="w-6 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M6 18L18 6M6 6l12 12"></path>
                                 </svg> Cancel
-                            </button>
-                            <button
-                                class="bg-yellow-500 flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none">Confirm</button>
+                            </button>  -->
+                            <!-- <button
+                                class="bg-yellow-500 flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none">Confirm</button> -->
+                                <button
+                        class="mb-3 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+                        type="submit" data-te-ripple-init data-te-ripple-color="light" style="
+                                    background: linear-gradient(to right, #1e1d1b, #201515, #0c0b0c, #1c131a);
+                                  ">
+                        Submit
+                      </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</form>
 </template>
-<style></style>
+
+<script>
+export default {
+  name: "buy",
+  data() {
+    return {
+      name_seller: '',
+      price_buy: '',
+      shares: '',
+      phone_number_buyer: '',
+      phone_number_seller: '',
+      date_buy: '',
+    }
+  },
+  methods: {
+    async submit() {
+      try {
+        const access_token = localStorage.getItem('access_token');
+        const refresh_token = localStorage.getItem('refresh_token');
+
+        const response = await fetch('http://127.0.0.1:8000/api/user/Create_buy', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${access_token}`,
+            'x-refresh-token': refresh_token
+          },
+          credentials: 'include',
+          body: JSON.stringify({
+            name_seller: this.name_seller,
+            price_buy: this.price_buy,
+            shares: this.shares,
+            phone_number_buyer: this.phone_number_buyer,
+            phone_number_seller: this.phone_number_seller,
+            date_buy: this.date_buy,
+          })
+        });
+
+        if (response.ok) {
+          // Handle successful response if needed
+        } else if (response.status === 401) {
+          // Handle unauthorized error, e.g., refresh token expired or invalid
+          console.error('Unauthorized: Refresh token expired or invalid');
+        } else {
+          // Handle other errors
+          console.error('Error:', response.statusText);
+        }
+        
+        await this.$router.push('buy_history');
+      } catch (error) {
+        // Handle fetch error
+        console.error('Error:', error);
+      }
+    }
+  }
+}
+</script>
+
+
+
+

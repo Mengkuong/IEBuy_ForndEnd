@@ -1,4 +1,4 @@
-<script lang="ts" setup></script>
+
 <template>
     <div class=" p-4 sm:ml-64 font-serif">
         <div class="relative overflow-x-auto  sm:rounded-lg mt-[100px] ml-8 font-serif">
@@ -57,259 +57,59 @@
                                             <tr>
                                                 <th scope="col"
                                                     class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Share
+                                                    Id
+                                                </th>
+                                                <!-- <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    Name
+                                                </th> -->
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    Shares
+                                                </th>
+                                               
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    Price
+                                                </th>
+
+                                                <th scope="col"
+                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                                    Phone Number
                                                 </th>
                                                 <th scope="col"
                                                     class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
                                                     Date
                                                 </th>
-
-
-                                                <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Customer
-                                                </th>
-                                                <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Phone
-                                                </th>
-                                                <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Price
-                                                </th>
-                                                <th scope="col"
-                                                    class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                                    Actions
-                                                </th>
+                                               
                                             </tr>
                                         </thead>
                                         <tbody
                                             class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                                            <tr>
+                                            <tr  v-for="(user,index) in data" :key="user.id" >
 
                                                 <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    10
+                                                    {{ index + 1 }}
                                                 </td>
+                                                <!-- <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                                       {{ user.name }}
+                                                    </td> -->
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    5, 2022</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-2">
-                                                        <img class="object-cover w-8 h-8 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                                                            alt="">
-                                                        <div>
-                                                            <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Andi Lane
-                                                            </h2>
-
-                                                        </div>
-                                                    </div>
+                                                    {{ user.shares }}
                                                 </td>
                                                 <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    096 96 86 484
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    100$</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        
-                                                        <a href="view_sale"
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </a>
-                                                       
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-
-                                                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    10
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    5, 2022</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-2">
-                                                        <img class="object-cover w-8 h-8 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                                                            alt="">
-                                                        <div>
-                                                            <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Andi Lane
-                                                            </h2>
-
-                                                        </div>
-                                                    </div>
+                                                    {{ user.price_sell }}
                                                 </td>
                                                 <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    096 96 86 484
+                                                    {{ user.phone_number }}
                                                 </td>
                                                 <td
                                                     class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    100$</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        <button
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </button>
-
-                                                    </div>
+                                                    {{ user.date_sell }}
                                                 </td>
-                                            </tr>
-                                            <tr>
-
-                                                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    <div
-                                                        class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
-                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M10 3L4.5 8.5L2 6" stroke="currentColor"
-                                                                stroke-width="1.5" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                        <h2 class="text-sm font-normal">Paid</h2>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    5, 2022</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-2">
-                                                        <img class="object-cover w-8 h-8 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
-                                                            alt="">
-                                                        <div>
-                                                            <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Kate
-                                                                Morrison</h2>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Monthly subscription</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        <button
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </button>
-
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-
-                                                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    <div
-                                                        class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
-                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M10 3L4.5 8.5L2 6" stroke="currentColor"
-                                                                stroke-width="1.5" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                        <h2 class="text-sm font-normal">Paid</h2>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    4, 2022</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-2">
-                                                        <img class="object-cover w-8 h-8 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&q=80"
-                                                            alt="">
-                                                        <div>
-                                                            <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Candice
-                                                                Wu</h2>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Monthly subscription</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        <button
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </button>
-
-
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-
-                                                <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                                                    <div
-                                                        class="inline-flex items-center px-3 py-1 text-gray-500 rounded-full gap-x-2 bg-gray-100/60 dark:bg-gray-800">
-                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M4.5 7L2 4.5M2 4.5L4.5 2M2 4.5H8C8.53043 4.5 9.03914 4.71071 9.41421 5.08579C9.78929 5.46086 10 5.96957 10 6.5V10"
-                                                                stroke="#667085" stroke-width="1.5" stroke-linecap="round"
-                                                                stroke-linejoin="round" />
-                                                        </svg>
-
-                                                        <h2 class="text-sm font-normal">Refunded</h2>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Jan
-                                                    4, 2022</td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-2">
-                                                        <img class="object-cover w-8 h-8 rounded-full"
-                                                            src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=644&q=80"
-                                                            alt="">
-                                                        <div>
-                                                            <h2 class="text-sm font-medium text-gray-800 dark:text-white ">
-                                                                Orlando
-                                                                Diggs</h2>
-
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                                                    Monthly subscription</td>
-                                                <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                                    <div class="flex items-center gap-x-6">
-                                                        <button
-                                                            class="text-blue-500 transition-colors duration-200 dark:hover:text-indigo-500 dark:text-gray-300 hover:text-indigo-500 focus:outline-none">
-                                                            View
-                                                        </button>
-
-
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                
+                                            </tr>                                    
                                         </tbody>
                                     </table>
                                 </div>
@@ -322,4 +122,51 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      data: []
+    };
+  },
+  mounted() {
+    this.getData(); // Automatically fetch data when the component is mounted
+  },
+  methods: {
+    async getData() {
+      try {
+        const access_token = localStorage.getItem('access_token');
+        const refresh_token = localStorage.getItem('refresh_token');
+
+        const response = await fetch('http://127.0.0.1:8000/api/user/Get_sell', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${access_token}`,
+            'x-refresh-token': refresh_token
+          },
+          credentials: 'include'
+        });
+
+        if (response.ok) {
+          const responseData = await response.json();
+          // Store the retrieved data
+          this.data = responseData.data;
+        } else if (response.status === 401) {
+          // Handle unauthorized error
+          console.error('Unauthorized: Refresh token expired or invalid');
+        } else {
+          // Handle other errors
+          console.error('Error:', response.statusText);
+        }
+      } catch (error) {
+        // Handle fetch error
+        console.error('Error:', error);
+      }
+    },
+    
+  }
+}
+</script>
 <style scoped></style>

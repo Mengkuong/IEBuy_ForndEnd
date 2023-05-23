@@ -1,5 +1,6 @@
-<script lang="ts" setup></script>
+
 <template>
+ <form @submit.prevent="submit">
   <section class="gradient-form   bg-neutral-200 dark:bg-neutral-700 font-serif ">
     <div class="container p-2">
       <div class="flex flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200 mt-3">
@@ -17,20 +18,20 @@
                       Welcome to IEBuy
                     </h4>
                   </div>
-                  <form class="mt-11">
+                  <form class="mt-11" @submit.prevent="submit">
                     <p class="mb-2 ">Please login to your account</p>
                     <div class="mb-4 mt-5">
-                      <label class="block text-grey-darker text-sm font-bold mb-2" for="username">
-                        Username
+                      <label class="block text-grey-darker text-sm font-bold mb-2" for="email">
+                        Email
                       </label>
-                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="username"
-                        type="text" placeholder="Username">
+                      <input v-model="email"  class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email"
+                        type="text" placeholder="Email">
                     </div>
                     <div class="">
                       <label class="block text-grey-darker text-sm font-bold mb-2" for="password">
                         Password
                       </label>
-                      <input
+                      <input v-model="password"
                         class="shadow appearance-none border border-red rounded w-full py-2 px-3 text-grey-darker mb-3"
                         id="password" type="password" placeholder="******************">
                       <p class="text-red text-xs italic">Please choose a password.</p>
@@ -47,7 +48,7 @@
                     <div class="mb-6 pt-1 pb-1 text-center">
                       <button
                         class="mb-3 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
-                        type="button" data-te-ripple-init data-te-ripple-color="light" style="
+                        type="submit" data-te-ripple-init data-te-ripple-color="light" style="
                                     background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
                                   ">
                         Log in
@@ -72,6 +73,55 @@
       </div>
     </div>
   </section>
+   </form>
 </template>
 
-<style scoped></style>
+
+
+<script>
+export default {
+  data() {
+    return {
+      email: '',
+      password: ''
+    }
+  },
+  methods: {
+    async submit() {
+      try {
+        const response = await fetch('http://localhost:8000/api/login', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          credentials: 'include',
+          body: JSON.stringify({
+            email: this.email,
+            password: this.password
+          })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          const { access_token, refresh_token } = data;
+
+          // Store the tokens in localStorage or vuex store
+          // Example using localStorage
+          localStorage.setItem('access_token', access_token);
+          localStorage.setItem('refresh_token', refresh_token);
+
+          // Redirect to the dashboard or protected route
+          this.$router.push('/dashboard');
+        } else {
+          // Handle login error
+          console.error('Login failed');
+        }
+      } catch (error) {
+        // Handle fetch error
+        console.error('Error:', error);
+      }
+    
+
+    }
+  }
+}
+
+</script>

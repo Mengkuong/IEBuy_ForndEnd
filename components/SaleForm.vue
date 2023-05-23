@@ -1,5 +1,6 @@
-<script lang="ts" setup></script>
+
 <template>
+    <form @submit.prevent="submit">
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 font-serif">
         <div class=" p-4 sm:ml-64 font-serif">
             <nav class="flex mt-11 ml-[100px]" aria-label="Breadcrumb">
@@ -65,57 +66,113 @@
                         <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:leading-7">
 
                             <div class="flex items-center space-x-4">
+                                <div class="flex flex-col">
+                                    <label class="leading-loose">name</label>
+                                    <input type="text" v-model="name"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="Input your name">
+                                </div>
 
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Shares</label>
-                                    <input type="text"
+                                    <input type="text" v-model="shares"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="quantiry of share">
                                 </div>
+                                
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex flex-col">
+                                    <label class="leading-loose">Total Price</label>
+                                    <input type="text" v-model="price_sell"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="total">
+                                </div>
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Date</label>
-                                    <input type="Date"
+                                    <input type="Date" v-model="date_sell"
                                         class="pr-12 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="Optional">
                                 </div>
                             </div>
-                            <div class="flex items-center space-x-4">
-                                <div class="flex flex-col">
-                                    <label class="leading-loose">Price of Each share</label>
-                                    <input type="number"
-                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="Price">
-                                </div>
-                                <div class="flex flex-col">
-                                    <label class="leading-loose">Total Price</label>
-                                    <input type="number"
-                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="total">
-                                </div>
-                            </div>
+                            
                             <div class="flex flex-col">
                                 <label class="leading-loose">Phone Number</label>
-                                <input type="text"
+                                <input type="text" v-model="phone_number"
                                     class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                     placeholder="phone number">
                             </div>
                         </div>
                         <div class="pt-4 flex items-center space-x-4">
                             <button
-                                class="flex justify-center items-center bg-green-100 w-full text-gray-900 px-4 py-2 rounded-md focus:outline-none">
-                                <svg class="w-6 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12"></path>
-                                </svg> Cancel
-                            </button>
-                            <button
-                                class="bg-yellow-500 flex justify-center items-center w-full text-white px-4 py-2 rounded-md focus:outline-none">Create</button>
+                        class="mb-3 inline-block w-full rounded px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+                        type="submit" data-te-ripple-init data-te-ripple-color="light" style="
+                                    background: linear-gradient(to right, #1e1d1b, #201515, #0c0b0c, #1c131a);
+                                  ">
+                        Submit
+                      </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </form>
 </template>
-<style></style>
+
+
+<script>
+export default {
+  name: "sell",
+  data() {
+    return {
+        price_sell: '',
+        shares: '',
+        shares: '',
+        phone_number: '',
+        date_sell: '',
+        name: '',
+    }
+  },
+  methods: {
+    async submit() {
+      try {
+        const access_token = localStorage.getItem('access_token');
+        const refresh_token = localStorage.getItem('refresh_token');
+
+        const response = await fetch('http://127.0.0.1:8000/api/user/Create_sell', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${access_token}`,
+            'x-refresh-token': refresh_token
+          },
+          credentials: 'include',
+          body: JSON.stringify({
+            price_sell: this.price_sell,
+            shares: this.shares,
+            phone_number: this.phone_number,
+            date_sell: this.date_sell,
+            name: this.name,
+          })
+        });
+
+        if (response.ok) {
+          // Handle successful response if needed
+        } else if (response.status === 401) {
+          // Handle unauthorized error, e.g., refresh token expired or invalid
+          console.error('Unauthorized: Refresh token expired or invalid');
+        } else {
+          // Handle other errors
+          console.error('Error:', response.statusText);
+        }
+        
+        await this.$router.push('buy_list');
+      } catch (error) {
+        // Handle fetch error
+        console.error('Error:', error);
+      }
+    }
+  }
+}
+</script>
