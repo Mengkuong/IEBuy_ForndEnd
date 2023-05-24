@@ -1,8 +1,10 @@
 <script lang="ts" setup></script>
+
 <template>
-    <div>
+  <div>
     <NavBar/>
-    <SaleList/>
-    </div>
+    <ResetPassword/>
+  </div>
 </template>
+
 <style scoped></style>

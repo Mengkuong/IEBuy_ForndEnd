@@ -26,7 +26,7 @@
                                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                Sell List
+                                Buy List
                             </div>
                         </a>
                     </li>
@@ -39,7 +39,7 @@
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Sell Form</span>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Buy Form</span>
                         </div>
                     </li>
                 </ol>
@@ -64,44 +64,51 @@
                         <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:leading-7">
 
                             <div class="flex items-center space-x-4">
-
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Seller</label>
+                                    <label class="leading-loose">Name:</label>
                                     <input type="text"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="name of seller">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Buyer</label>
+                                    <label class="leading-loose">Phone Number:</label>
                                     <input type="text"
-                                        class="pr-12 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="name of buyer">
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="number of seller">
                                 </div>
                             </div>
                             <div class="flex items-center space-x-4">
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Shares</label>
-                                    <input type="number"
+                                    <label class="leading-loose">Shares:</label>
+                                    <input type="text"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                         placeholder="quantity of share">
                                 </div>
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Total Price</label>
-                                    <input type="number"
+                                    <label class="leading-loose">Total:</label>
+                                    <input type="text"
                                         class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="total">
+                                        placeholder="total price">
                                 </div>
                             </div>
-                            <div class="flex flex-col">
-                                <label class="leading-loose">Phone Number</label>
-                                <input type="text"
-                                    class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                    placeholder="phone number">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex flex-col">
+                                    <label class="leading-loose">Date:</label>
+                                    <input type="date"
+                                        class="pr-11 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="optional">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label class="leading-loose">Phone Number:</label>
+                                    <input type="text"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="number of buyer">
+                                </div>
                             </div>
                         </div>
                         <div class="pt-4 flex items-center space-x-4">
                             <button
-                                class="flex justify-center items-center bg-green-100 w-full text-gray-900 px-4 py-2 rounded-md focus:outline-none">
+                                class="flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none bg-red-100 hover:bg-red-500 focus:ring-4 focus:ring-red-300  mr-2 mb-2 dark:focus:ring-red-900">
                                 <svg class="w-6 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -109,7 +116,7 @@
                                 </svg> Cancel
                             </button>
                             <button
-                                class="bg-yellow-500 flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none">Confirm</button>
+                                class="flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300  mr-2 mb-2 dark:focus:ring-yellow-900">Confirm</button>
                         </div>
                     </div>
                 </div>

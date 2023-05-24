@@ -3,7 +3,6 @@
 <template>
     <div class="p-4 sm:ml-64 font-serif">
         <div class="relative overflow-x-auto  sm:rounded-lg mt-[100px] ml-8 ">
-
             <nav class="flex mb-4" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
                     <li class="inline-flex items-center">
@@ -27,7 +26,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                             <a href="#"
-                                class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Users
+                                class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Amount
                             </a>
                         </div>
                     </li>
@@ -44,18 +43,15 @@
                     </li>
                 </ol>
             </nav>
-
         </div>
         <div class="bg-white antialiased flex font-sans mt-5 ">
-            <form
-                class="rounded-lg mx-auto mt-2 ml-16  w-[80%] inputs space-y-6 bg-green-100 px-[40px] py-[30px] font-serif">
+            <form class="rounded-lg mx-auto mt-2 ml-16 bg-yellow-100 w-[80%] inputs space-y-6  px-[40px] py-[30px] font-serif">
                 <div>
                     <h1 class="text-4xl font-bold">Transfer Share</h1>
                     <p class="text-gray-600 mt-2">
-                        Complete information of you and your share partner
+                        Complete information of your share partner
                     </p>
                 </div>
-                <p class="font-bold text-lg">*Seller Information</p>
                 <div class="flex space-x-4">
                     <div class="w-1/2">
                         <label for="username">User ID:</label>
@@ -100,52 +96,25 @@
                 </div>
 
                 <div>
-                    <label for="address">Invoice</label>
-                    <input class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                        type="text" name="address" id="address" />
+
+                    <label class="block mb-2 text-l font-medium text-gray-900 dark:text-white" for="multiple_files">
+                        Invoice</label>
+                    <input
+                        class="border border-gray-400 bg-white px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
+                        id="multiple_files" type="file" multiple>
+
                     <p class="text-sm text-gray-600">
-                        We will use this as your billing address
+                        We will use this as your pay bill
                     </p>
                 </div>
-                <p class="font-bold text-lg">*Buyer Information</p>
-                <div class="flex space-x-4">
-                    <div class="w-1/2">
-                        <label for="buy">User ID:</label>
-                        <input
-                            class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                            type="number" name="buy" id="buy" />
-                    </div>
-                    <div class="w-1/2">
-                        <label for="price">Username:</label>
-                        <input
-                            class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                            type="text" name="price" id="price" />
-                    </div>
+                <div class="flex justify-end">
+                    <button type="button"
+                        class="focus:outline-none text-black bg-green-400 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-medium px-5 py-3 mr-2 mb-2 dark:focus:ring-green-900">
+                        Transfer</button>
                 </div>
-                <div class="flex space-x-4">
-                    <div class="w-1/2">
-                        <label for="total">Phone Number:</label>
-                        <input
-                            class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                            type="number" name="total" id="total" />
-                    </div>
-                    <div class="w-1/2">
-                        <label for="date">Date of share:</label>
-                        <input
-                            class="border border-gray-400 px-4 py-2 rounded w-full focus:outline-none focus:border-teal-400"
-                            type="date" name="date" id="date" />
-                    </div>
-
-                </div>
-                
-               
-            <div class="flex justify-end">
-                <button type="button"
-                    class="focus:outline-none text-black bg-green-400 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-medium px-5 py-3 mr-2 mb-2 dark:focus:ring-green-900">
-                    Transfer</button>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div></template>
+</template>
 
 <style scoped></style>

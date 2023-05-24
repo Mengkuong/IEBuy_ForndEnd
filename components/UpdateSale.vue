@@ -26,7 +26,7 @@
                                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                                E-commerce 
+                                Sell List 
                             </div>
                         </a>
                     </li>
@@ -38,7 +38,7 @@
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Sell Form</span>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Update Form</span>
                         </div>
                     </li>
                 </ol>
@@ -54,8 +54,8 @@
                             <img src="icon (1).png" />
                         </div>
                         <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
-                            <h2 class="leading-relaxed h-[50%]">Sell Form</h2>
-                            <p class="text-sm text-gray-500 font-normal leading-relaxed">Complete information for sale your share
+                            <h2 class="leading-relaxed h-[50%]">Update shares form</h2>
+                            <p class="text-sm text-gray-500 font-normal leading-relaxed">Complete for edit your share information
                             </p>
                         </div>
                     </div>
@@ -79,10 +79,10 @@
                             </div>
                             <div class="flex items-center space-x-4">
                                 <div class="flex flex-col">
-                                    <label class="leading-loose">Date:</label>
-                                    <input type="Date"
-                                        class="pr-12 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                                        placeholder="Optional">
+                                    <label class="leading-loose">Price of Each share:</label>
+                                    <input type="number"
+                                        class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="Price">
                                 </div>
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Total Price:</label>
@@ -91,8 +91,13 @@
                                         placeholder="total">
                                 </div>
                             </div>
-                           
-                               
+                            <div class="flex items-center space-x-4">
+                                <div class="flex flex-col">
+                                    <label class="leading-loose">Date:</label>
+                                    <input type="Date"
+                                        class="pr-12 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
+                                        placeholder="Optional">
+                                </div>
                                 <div class="flex flex-col">
                                     <label class="leading-loose">Phone Number:</label>
                                     <input type="number"
@@ -100,7 +105,7 @@
                                         placeholder="phone number">
                                 </div>
                                 
-                            
+                            </div>
                         </div>
                         <div class="pt-4 flex items-center space-x-4">
                             <button
@@ -112,7 +117,7 @@
                                 </svg> Cancel
                             </button>
                             <button
-                                class="flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300  mr-2 mb-2 dark:focus:ring-yellow-900">Submit</button>
+                                class="flex justify-center items-center w-full text-black px-4 py-2 rounded-md focus:outline-none bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300  mr-2 mb-2 dark:focus:ring-yellow-900">Confirm Update</button>
                         </div>
                     </div>
                 </div>

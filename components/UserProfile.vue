@@ -101,9 +101,12 @@
                                 <span class="ml-auto">Nov 07, 2016</span>
                             </li>
                         </ul>
-                        <button
+                        <NuxtLink to="change_profile">
+                            <button
                             class="block w-full text-blue-800 text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 mt-5">
                            Edit Profile</button>
+                        </NuxtLink>
+                       
                     </div>
                     <div class="my-4"></div>
                 </div>

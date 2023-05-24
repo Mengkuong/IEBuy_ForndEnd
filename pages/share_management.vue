@@ -1,10 +1,8 @@
 <script lang="ts" setup></script>
-
 <template>
-  <div>
+    <div>
     <NavBar/>
-    <ChangeProfile/>
-  </div>
+    <ShareManagement/>
+    </div>
 </template>
-
 <style scoped></style>
