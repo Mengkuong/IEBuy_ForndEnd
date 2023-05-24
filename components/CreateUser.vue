@@ -48,7 +48,7 @@
     <div class="bg-white antialiased flex font-sans ">
       <form class="rounded-lg mx-auto mt-5 ml-11  w-[100%] inputs space-y-6  px-[40px] py-[30px] font-serif">
         <div>
-          <h1 class="text-4xl font-bold">User Register Account Settings</h1>
+          <h1 class="text-4xl font-bold">Create New User</h1>
           <p class="text-gray-600 mt-2">
             Changes you make will be visible to other users
           </p>
@@ -141,8 +141,8 @@
         </div>
         <div class="flex justify-end">
           <button type="button"
-            class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-medium px-5 py-3 mr-2 mb-2 dark:focus:ring-yellow-900">Register
-            Account</button>
+            class="focus:outline-none text-black bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-medium px-5 py-3 mr-2 mb-2 dark:focus:ring-yellow-900">Create
+            </button>
         </div>
       </form>
     </div>

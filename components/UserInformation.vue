@@ -28,7 +28,7 @@
                                     clip-rule="evenodd"></path>
                             </svg>
                             <a href="#"
-                                class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Staff</a>
+                                class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">User</a>
                         </div>
                     </li>
                     <li aria-current="page">
@@ -39,7 +39,7 @@
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Profile</span>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Information</span>
                         </div>
                     </li>
                 </ol>
@@ -62,9 +62,9 @@
                         <ul
                             class="bg-gray-100 text-sm text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-8 divide-y rounded shadow-sm">
                             <li class="flex items-center py-3">
-                                <span>Role</span>
+                                <span>Total Share</span>
                                 <span class="ml-auto"><span
-                                        class="bg-yellow-500 py-1 px-2 rounded text-white text-sm">User</span></span>
+                                        class="bg-white py-1 px-2 rounded text-black text-sm">100</span></span>
                             </li>
                             <li class="flex items-center py-3">
                                 <span>Member since</span>

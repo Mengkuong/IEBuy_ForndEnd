@@ -3,9 +3,9 @@
 <template>
   <div class="p-4 sm:ml-64 mt-16 ml-14">
     <div class="bg-white antialiased flex font-sans mt-5 ">
-      <form class=" mx-auto mt-2 ml-11 w-[90%] inputs space-y-6  px-[40px] py-[30px] font-serif">
+      <form class=" mx-auto mt-2 ml-11 w-[90%] inputs space-y-6 bg-green-50 px-[40px] py-[30px] font-serif">
         <div>
-          <h1 class="text-4xl font-bold">User Update Infromation</h1>
+          <h1 class="text-2xl font-bold">User Update Information</h1>
           <p class="text-gray-600 mt-2">
             Changes you make will be visible to other users
           </p>

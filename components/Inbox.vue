@@ -1,14 +1,14 @@
 <script lang="ts" setup></script>
 <template>
     <!-- This is an example component -->
-    <div class="container mx-auto shadow-lg rounded-lg font-serif h-screen">
+    <div class="container mx-auto shadow-lg rounded-lg font-serif h-screen ">
 
         <!-- headaer -->
-        <div class="px-5 py-5 flex justify-between items-center bg-gradient-to-r from-rose-100 to-teal-100">
-            <div class="w-1/2  mr-[150px]">
+        <div class="px-5 py-2 flex justify-between items-center bg-yellow-500">
+            <div class="mr-[150px]">
                 <NuxtLink to="/">
                     <button type="button"
-                        class="text-gray-900 bg-white shover:bg-gradient-to-bl flex focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                        class="text-gray-900 bg-yellow-100 shover:bg-gradient-to-bl flex focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="w-5 h-4 mr-2">
                             <path
@@ -18,9 +18,6 @@
                         </svg>
                         Home</button>
                 </NuxtLink>
-                <div class="font-semibold text-2xl mt-5">
-                    Chats
-                </div>
             </div>
             <div class="h-15 w-25 p-2">
                 <img class="object-cover h-12 w-12 rounded-full" src="7e3b6d714addc91bafb74a509608603e.jpg" alt="logo" />
@@ -147,7 +144,7 @@
                     </div>
                 </div>
                 <div
-                    class="py-5 flex flex-row items-center h-16 rounded-xl bg-gradient-to-r from-rose-100 to-teal-100 w-full px-4">
+                    class="py-5 flex flex-row items-center h-16 rounded-xl bg-yellow-400 w-full px-4">
                     <div>
                         <button class="flex items-center justify-center text-gray-400 hover:text-gray-600">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -175,7 +172,7 @@
                     </div>
                     <div class="ml-4">
                         <button
-                            class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 rounded-xl text-white px-4 py-1 flex-shrink-0">
+                            class="flex items-center justify-center bg-green-500 hover:bg-green-500 focus:ring-4 focus:ring-green-300  mr-2 mb-2 dark:focus:ring-green-900 rounded-xl text-white px-4 py-1 flex-shrink-0">
                             <span>Send</span>
                             <span class="ml-2">
                                 <svg class="w-4 h-4 transform rotate-45 -mt-px" fill="none" stroke="currentColor"
