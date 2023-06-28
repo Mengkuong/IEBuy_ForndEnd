@@ -2,8 +2,8 @@
 
 <template>
   <div>
-   <NavBar/>
-   <UpdateUser/>
+   <!-- <NavBar/>
+   <UpdateUser/> -->
   </div>
 </template>
 

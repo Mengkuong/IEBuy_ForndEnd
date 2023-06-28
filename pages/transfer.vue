@@ -3,7 +3,7 @@
 <template>
     <div>
         <NavBar/>
-        <BuyShareList/>
+        <Transfer/>
     </div>
 </template>
 <style scope>

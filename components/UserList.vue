@@ -38,7 +38,7 @@
                                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">List</span>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Management</span>
                         </div>
                     </li>
                 </ol>
@@ -64,7 +64,7 @@
                     <div class="relative">
                         <input type="text" id="table-search-users"
                             class=" p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-yellow-500 focus:border-yellow-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Search for data">
+                            placeholder="search for user">
                         <button type="submit"
                             class="absolute top-0 right-0 p-2 pl-3 text-sm font-medium  bg-yellow-500 rounded-r-lg border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">
                             <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -81,7 +81,7 @@
 
           
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                <thead class="text-xs text-gray-700 uppercase bg-green-200 dark:bg-green-700 dark:text-green-400">
+                <thead class="text-xs text-gray-700 uppercase bg-green-400 dark:bg-green-700 dark:text-green-400">
                     <tr>
 
                         <th scope="col" class="px-6 py-3">
@@ -118,13 +118,13 @@
                             React Developer
                         </td>
 
-                        <td class="px-6 py-4">
+                        <td class="px-6 py-4 font-sans">
                             096 90 98 924
                         </td>
                         <td class="px-6 py-4 ">
                             Phnom Penh
                         </td>
-                        <td class="px-5 py-3  ">
+                        <td class="px-5 py-3 font-sans ">
                             09.January.2023
                         </td>
 
@@ -141,16 +141,7 @@
                                 </svg>
                                 View
                             </a>
-                            <a href="user_update" data-modal-target="editUserModal" data-modal-show="editUserModal"
-                                class="flex text-white bg-blue-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center"><svg
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor" class="w-5 h-5">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-
-                                </svg>
-                                Edit
-                            </a>
+                                <UpdateUser/>
                             <a href="#" type="button" data-modal-show="deleteUserModal"
                                 class="inline-flex text-white bg-red-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-2 py-1.5 text-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -161,41 +152,11 @@
                                 </svg>
                                 Delete
                             </a>
-                            <!-- Modal toggle -->
-
+                           
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <!-- Edit user modal -->
-            <div id="editUserModal" tabindex="-1" aria-hidden="true"
-                class="fixed top-0 left-0 right-0 z-50 items-center justify-center hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-                <div class="relative w-full h-full max-w-2xl md:h-auto">
-                    <!-- Modal content -->
-                    <form action="#" class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                        <!-- Modal header -->
-                        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                Edit user
-                            </h3>
-                            <button type="button"
-                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                data-modal-hide="editUserModal">
-                                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <!-- Modal body -->
-
-                    </form>
-                </div>
-
-            </div>
-
         </div>
         <div class="flex items-center justify-between mt-2 w-1/2 ml-[300px] font-serif">
             <a href="#"
@@ -210,7 +171,7 @@
                 </span>
             </a>
 
-            <div class="items-center hidden md:flex gap-x-3">
+            <div class="items-center hidden md:flex gap-x-3 font-sans">
                 <a href="#" class="px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60">1</a>
                 <a href="#"
                     class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">2</a>

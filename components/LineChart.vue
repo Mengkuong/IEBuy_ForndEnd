@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-gray-50">
+  <div class="relative flex flex-col min-w-0 break-words w-[115%] mb-6 shadow-lg border border-gray-100 rounded-lg bg-white">
     <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
       <div class="flex flex-wrap items-center">
         <div class="relative w-full max-w-full flex-grow flex-1">
@@ -7,14 +7,14 @@
             Overview
           </h6>
           <h2 class="text-black text-xl font-semibold">
-            Sales value
+            Share value
           </h2>
         </div>
       </div>
     </div>
     <div class="p-4 flex-auto">
       <!-- Chart -->
-      <div class="relative h-[400px]">
+      <div class="relative h-[300px]">
         <canvas id="line-chart"></canvas>
       </div>
     </div>
@@ -41,16 +41,16 @@ export default {
           datasets: [
             {
               label: new Date().getFullYear(),
-              backgroundColor: "#9ae6b4",
-              borderColor: "#9ae6b4",
+              backgroundColor: "#fde047",
+              borderColor: "#fde047",
               data: [65, 78, 66, 44, 56, 67, 75],
               fill: false,
             },
             {
               label: new Date().getFullYear() - 1,
               fill: false,
-              backgroundColor: "#ed64a6",
-              borderColor: "#ed64a6",
+              backgroundColor: "#38bdf8",
+              borderColor: "#38bdf8",
               data: [40, 68, 86, 74, 56, 60, 87],
             },
           ],
@@ -113,10 +113,11 @@ export default {
                   fontColor: "white",
                 },
                 gridLines: {
-                  borderDash: [3],
+                  display:true,
+                  borderDash: [3],  
                   borderDashOffset: [3],
                   drawBorder: false,
-                  color: "rgba(255, 255, 255, 0.15)",
+                  color: "#94a3b8",
                   zeroLineColor: "rgba(33, 37, 41, 0)",
                   zeroLineBorderDash: [2],
                   zeroLineBorderDashOffset: [2],

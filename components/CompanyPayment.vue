@@ -87,7 +87,7 @@
                                 <tbody class="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
                                     <tr>
                                         <td
-                                            class="px-4 py-4 text-sm font-medium text-gray-700 dark:text-gray-200 whitespace-nowrap">
+                                            class="px-4 py-4 text-sm font-sans text-gray-700 dark:text-gray-200 whitespace-nowrap">
                                             1
                                         </td>
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
@@ -96,18 +96,18 @@
                                         <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             Desk
                                         </td>
-                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                        <td class="px-4 py-4 text-sm font-sans text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             23$</td>
-                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+                                        <td class="px-4 py-4 text-sm  font-sans text-gray-500 dark:text-gray-300 whitespace-nowrap">
                                             2</td>
                                         <td class="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                                             <div
                                                 class="inline-flex items-center px-3 py-1 rounded-full gap-x-2 text-emerald-500 bg-emerald-100/60 dark:bg-gray-800">
 
-                                                <h2 class="text-sm font-normal">20$</h2>
+                                                <h2 class="text-sm font-sans">20$</h2>
                                             </div>
                                         </td>
-                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Jan
+                                        <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap font-sans">Jan
                                             6, 2022</td>
                                     </tr>
                                 </tbody>
@@ -132,7 +132,7 @@
                 </span>
             </a>
 
-            <div class="items-center hidden md:flex gap-x-3">
+            <div class="items-center hidden md:flex gap-x-3 font-sans">
                 <a href="#" class="px-2 py-1 text-sm text-blue-500 rounded-md dark:bg-gray-800 bg-blue-100/60">1</a>
                 <a href="#"
                     class="px-2 py-1 text-sm text-gray-500 rounded-md dark:hover:bg-gray-800 dark:text-gray-300 hover:bg-gray-100">2</a>

@@ -23,123 +23,98 @@
                     <div class="p-4 rounded-lg ">
                         <NuxtLink to="dashboard">
                             <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Home</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path fill-rule="evenodd"
+                                        d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Home</div>
                         </NuxtLink>
-                        
-                       
+
+
                     </div>
                     <div class="p-4 rounded-lg cursor-pointer">
-                        <NuxtLink to="sale_form">
+                        <NuxtLink to="user_management">
                             <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg class="inline w-6 h-6 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                <path fill-rule="evenodd"
-                                    d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Sale</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path
+                                        d="M7 8a3 3 0 100-6 3 3 0 000 6zM14.5 9a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM1.615 16.428a1.224 1.224 0 01-.569-1.175 6.002 6.002 0 0111.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 017 18a9.953 9.953 0 01-5.385-1.572zM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 00-1.588-3.755 4.502 4.502 0 015.874 2.636.818.818 0 01-.36.98A7.465 7.465 0 0114.5 16z" />
+                                </svg>
+
+                            </button>
+                            <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Users</div>
                         </NuxtLink>
-                       
+
                     </div>
                     <div class="p-4 rounded-lg cursor-pointer">
                         <NuxtLink to="buy_list">
                             <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path
-                                    d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
-                            </svg>
-                        </button>
-                        <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Buy</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path
+                                        d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                            </button>
+                            <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Buy</div>
                         </NuxtLink>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-3 gap-4 p-1 lg:grid-cols-4 ml-5">
                 <div class="flex items-center space-x-4">
-                    <div class="p-4 rounded-lg ">
-                        <NuxtLink to="inbox">
-                            <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M10 2c-2.236 0-4.43.18-6.57.524C1.993 2.755 1 4.014 1 5.426v5.148c0 1.413.993 2.67 2.43 2.902.848.137 1.705.248 2.57.331v3.443a.75.75 0 001.28.53l3.58-3.579a.78.78 0 01.527-.224 41.202 41.202 0 005.183-.5c1.437-.232 2.43-1.49 2.43-2.903V5.426c0-1.413-.993-2.67-2.43-2.902A41.289 41.289 0 0010 2zm0 7a1 1 0 100-2 1 1 0 000 2zM8 8a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Inbox</div>
-                        </NuxtLink>
-                    </div>
                     <div class="p-4 rounded-lg cursor-pointer ">
-                        <NuxtLink to="user_profile">
+                        <NuxtLink to="data_management">
                             <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M1 5.25A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25v9.5A2.25 2.25 0 0116.75 17H3.25A2.25 2.25 0 011 14.75v-9.5zm1.5 5.81v3.69c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75v-2.69l-2.22-2.219a.75.75 0 00-1.06 0l-1.91 1.909.47.47a.75.75 0 11-1.06 1.06L6.53 8.091a.75.75 0 00-1.06 0l-2.97 2.97zM12 7a1 1 0 11-2 0 1 1 0 012 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Profile</div>
-                        </NuxtLink>
-                    </div>
-                    <div class="p-4 rounded-lg cursor-pointer">
-                        <NuxtLink to="reset_password">
-                            <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M8 7a5 5 0 113.61 4.804l-1.903 1.903A1 1 0 019 14H8v1a1 1 0 01-1 1H6v1a1 1 0 01-1 1H3a1 1 0 01-1-1v-2a1 1 0 01.293-.707L8.196 8.39A5.002 5.002 0 018 7zm5-3a.75.75 0 000 1.5A1.5 1.5 0 0114.5 7 .75.75 0 0016 7a3 3 0 00-3-3z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Security</div>
-                        </NuxtLink>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-3 gap-4 p-1 lg:grid-cols-4 ml-5">
-                <div class="flex items-center space-x-4">
-                    <div class="p-4 rounded-lg ">
-                        <NuxtLink to="transfer">
-                            <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M13.2 2.24a.75.75 0 00.04 1.06l2.1 1.95H6.75a.75.75 0 000 1.5h8.59l-2.1 1.95a.75.75 0 101.02 1.1l3.5-3.25a.75.75 0 000-1.1l-3.5-3.25a.75.75 0 00-1.06.04zm-6.4 8a.75.75 0 00-1.06-.04l-3.5 3.25a.75.75 0 000 1.1l3.5 3.25a.75.75 0 101.02-1.1l-2.1-1.95h8.59a.75.75 0 000-1.5H4.66l2.1-1.95a.75.75 0 00.04-1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path
+                                        d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z" />
+                                </svg>
 
-                        </button>
-                        <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Transfer</div>
+                            </button>
+                            <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Data</div>
                         </NuxtLink>
                     </div>
-                    <div class="p-4 rounded-lg cursor-pointer ">
-                        <div class="flex justify-center items-center p-2 mx-auto w-18 h-18">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
-                                <path fill-rule="evenodd"
-                                    d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
-                                    clip-rule="evenodd" />
-                                <path fill-rule="evenodd"
-                                    d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
-                                    clip-rule="evenodd" />
-                            </svg>
+                    <div class="p-4 rounded-lg ">
+                        <NuxtLink to="payment">
+                            <button class="flex justify-center items-center p-2 mx-auto w-18 h-18">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path
+                                        d="M10.75 10.818v2.614A3.13 3.13 0 0011.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 00-1.138-.432zM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 00-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152z" />
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-6a.75.75 0 01.75.75v.316a3.78 3.78 0 011.653.713c.426.33.744.74.925 1.2a.75.75 0 01-1.395.55 1.35 1.35 0 00-.447-.563 2.187 2.187 0 00-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 11-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 111.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 01-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 011.653-.713V4.75A.75.75 0 0110 4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+                            </button>
+                            <div class="font-medium text-sm text-center text-gray-500 dark:text-gray-400">Payment</div>
+                        </NuxtLink>
+                    </div>
+                    <div class="flex items-center space-x-4">
+
+                        <div class="p-4 rounded-lg cursor-pointer ">
+                            <div class="flex justify-center items-center p-2 mx-auto w-18 h-18">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="inline w-6 h-6 text-gray-500 dark:text-gray-400">
+                                    <path fill-rule="evenodd"
+                                        d="M3 4.25A2.25 2.25 0 015.25 2h5.5A2.25 2.25 0 0113 4.25v2a.75.75 0 01-1.5 0v-2a.75.75 0 00-.75-.75h-5.5a.75.75 0 00-.75.75v11.5c0 .414.336.75.75.75h5.5a.75.75 0 00.75-.75v-2a.75.75 0 011.5 0v2A2.25 2.25 0 0110.75 18h-5.5A2.25 2.25 0 013 15.75V4.25z"
+                                        clip-rule="evenodd" />
+                                    <path fill-rule="evenodd"
+                                        d="M6 10a.75.75 0 01.75-.75h9.546l-1.048-.943a.75.75 0 111.004-1.114l2.5 2.25a.75.75 0 010 1.114l-2.5 2.25a.75.75 0 11-1.004-1.114l1.048-.943H6.75A.75.75 0 016 10z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Logout</div>
                         </div>
-                        <div class="font-medium text-center text-sm text-gray-500 dark:text-gray-400">Logout</div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-</div></template>
+</template>
 <style></style>
