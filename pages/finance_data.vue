@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <AdminLogin/>
+   <NavBar/>
+   <FinanceData/>
   </div>
 </template>
 
