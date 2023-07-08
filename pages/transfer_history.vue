@@ -1,7 +1,10 @@
 <script lang="ts" setup></script>
 <template>
     <div>
-        <FinanceData/>
+        <NavBar/>
+        <TransferHistory/>
+        
     </div>
 </template>
-<style></style>
+<style>
+</style>

@@ -2,7 +2,8 @@
 
 <template>
   <div>
-    <RegisterAccount/>
+    <NavBar/>
+    <AmountShare/>
   </div>
 </template>
 

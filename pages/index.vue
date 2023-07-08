@@ -2,10 +2,8 @@
 
 <template>
   <div>
+    <NavBar/>
     <Dashboard/>
-   <NavBar/>
-   <!-- <Chart/> -->
-   <!-- <SideBar/> -->
   </div>
 </template>
 

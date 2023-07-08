@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 <template>
     <div>
-        <NavBar/>
-        <UserList/>
+        <!-- <SuperAdminNavBar/> -->
+        <SignIn/>
         
     </div>
 </template>

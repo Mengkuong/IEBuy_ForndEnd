@@ -1,9 +1,0 @@
-<script lang="ts" setup></script>
-
-<template>
-  <div>
-    <UserChangeProfile/>
-  </div>
-</template>
-
-<style scoped></style>
